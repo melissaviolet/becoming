@@ -24,3 +24,4 @@ print(places)
 
 print(sorted(places,reverse=True))
 print(f"I want to visit {len(places)} countries.")
+
