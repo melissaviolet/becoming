@@ -13,3 +13,24 @@ print(multiples)
 
 cubes = [num**3 for num in range(1,11)]
 print(cubes)
+
+names = ["Shuga", "Kezia", "Violet", "Janet", "Nina", "Britah"]
+other_names = names[:]
+names.append("Jezrel")
+other_names.append("Jezeel")
+print(names)
+print(other_names)
+
+print("--------------------------------------------------------------")
+
+for name in names:
+    print(name)
+
+print("--------------------------------------------------------------")
+
+for other in other_names:
+    print(other)
+
+my_names = ("Shuga", "Kezia", "Violet", "Janet", "Nina", "Britah")
+for name in my_names:
+    print(name)
