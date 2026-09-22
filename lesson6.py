@@ -15,3 +15,9 @@ else:
 # The new position is the old position plus the increment.
 alien_0['x_position'] = alien_0['x_position'] + x_increment
 print(f"New position: {alien_0['x_position']}")
+
+del alien_0['x_position']
+print(alien_0)
+
+x_position = alien_0.get("x_position", "No X coordinates found")
+print(x_position)
