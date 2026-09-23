@@ -1,23 +1,18 @@
-alien_0 = {'x_position': 0, 'y_position': 25, 'speed': 'medium'}
+shuga_dict = {
+    "first_name": "Melissa",
+    "last_name": "Violet",
+    "city": "Kampala",
+    "age": 22,
+    "status": "single",
+    "course": "Computer Science",
+    "hobby" : "music",
+    "aspiration": "piano"
+}
 
-print(f"Original position: {alien_0['x_position']}")
-# Move the alien to the right.
-# Determine how far to move the alien based on its current speed.
+print(shuga_dict["first_name"])
+something = shuga_dict["status"]
+age = shuga_dict["age"]
 
-if alien_0['speed'] == 'slow':
- x_increment = 1
-elif alien_0['speed'] == 'medium':
- x_increment = 2
-else:
- # This must be a fast alien.
- x_increment = 3
- 
-# The new position is the old position plus the increment.
-alien_0['x_position'] = alien_0['x_position'] + x_increment
-print(f"New position: {alien_0['x_position']}")
+print(f"Melissa is actually very {something}, she isn't seeing anyone. In real life she has actually never dated anyone.")
 
-del alien_0['x_position']
-print(alien_0)
-
-x_position = alien_0.get("x_position", "No X coordinates found")
-print(x_position)
+print(f"Shuga was {age} years old when she decided to actually focus on herself, love herself more, fight jealous and change her life for the better.")
