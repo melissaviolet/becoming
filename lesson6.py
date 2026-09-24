@@ -1,31 +1,25 @@
-# shuga_dict = {
-#     "first_name": "Melissa",
-#     "last_name": "Violet",
-#     "city": "Kampala",
-#     "age": 22,
-#     "status": "single",
-#     "course": "Computer Science",
-#     "hobby" : "music",
-#     "aspiration": "piano"
-# }
+shuga_dict = {
+    "first_name": "Melissa",
+    "last_name": "Violet",
+    "city": "Kampala",
+    
+    "status": "single",
+    "course": "Computer Science",
+    "hobby" : "music",
+    "aspiration": "piano"
+}
 
-# print(shuga_dict["first_name"])
-# something = shuga_dict["status"]
-# age = shuga_dict["age"]
+print("The information about this girl is:")
+for k,v in shuga_dict.items():
+    print(f"{k.title()} -> {v.title()}")
 
-# print(f"Melissa is actually very {something}, she isn't seeing anyone. In real life she has actually never dated anyone.")
+print(shuga_dict["first_name"])
+something = shuga_dict["status"]
 
-# print(f"Shuga was {age} years old when she decided to actually focus on herself, love herself more, fight jealous and change her life for the better.")
 
-# print(f"Shuga lives in {shuga_dict["city"]}.")
+print(f"Melissa is actually very {something}, she isn't seeing anyone. In real life she has actually never dated anyone.")
 
-favorite_languages = {
- 'jen': 'python',
- 'sarah': 'c',
- 'edward': 'rust',
- 'phil': 'python',
- }
+print(f"Shuga was 22 years old when she decided to actually focus on herself, love herself more, fight jealous and change her life for the better.")
 
-print("The following languages have been mentioned:")
-for language in set(favorite_languages.values()):
- print(language.title())
+print(f"Shuga lives in {shuga_dict["city"]}.")
+
