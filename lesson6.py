@@ -23,3 +23,29 @@ print(f"Shuga was 22 years old when she decided to actually focus on herself, lo
 
 print(f"Shuga lives in {shuga_dict["city"]}.")
 
+rivers = {
+    "nile": "egypt",
+    "amazon": "usa",
+    "katonga": "uganda"
+}
+
+for river, country in rivers.items():
+    print(f"The {river.title()} runs through {country.title()}")
+
+for country in rivers.values():
+    print(f"{country.title()}")
+
+favorite_languages = {
+ 'jen': 'python',
+ 'sarah': 'c',
+ 'edward': 'rust',
+ 'phil': 'python',
+ }
+
+poll_names = ["violet", "jen", "marie", "edward", "phil"]
+
+for name in poll_names:
+    if name in favorite_languages.keys():
+        print(f"{name.title()}! Thank you for taking the poll.")
+    else:
+        print(f"{name.title()}! Please take the poll.")
