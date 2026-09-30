@@ -21,33 +21,32 @@
 # else:
 #     print(f"{runner_number} is not a multiple of 10!")
 
-prompt = "\nWrite the pizza toppings that you want: "
-prompt += "\nType 'quit' to exit. "
+# prompt = "\nWrite the pizza toppings that you want: "
+# prompt += "\nType 'quit' to exit. "
 
+# while True :
+#     message = input(prompt) 
+#     if message != 'quit':
+#         print(f"We will add {message} to your pizza.")
 
+#     if message == 'quit': 
+#         break
 
-while True :
-    message = input(prompt) 
-    if message != 'quit':
-        print(f"We will add {message} to your pizza.")
+qtn = "\nWhat is your age? "
 
-    if message == 'quit': 
-        break
+message = 0
+active = True
 
-# qtn = "\nWhat is your age? "
-
-# message = 0
-# active = True
-
-# while active:
-#     message = input(qtn)
-#     message = int(message)
-#     if message <= 3:
-#         print(f"Your ticket is free!")
-#     elif message in range(4,13):
-#         print(f"Your ticket is 10$!")
-#     elif message >= 12:
-#         print(f"Your ticket is 15$!")
+while active:
+    message = input(qtn)
+    message = int(message)
+    if message <= 3:
+        print(f"Your ticket is free!")
+    elif message in range(4,13):
+        print(f"Your ticket is 10$!")
+    elif message >= 12:
+        print(f"Your ticket is 15$!")
+    break
 
 
     
