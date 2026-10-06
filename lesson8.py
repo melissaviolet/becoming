@@ -5,12 +5,14 @@ def display_message():
 
 display_message()
 
+# Favourite book
 def favourite_book(title):
     print(f"One of my favourite books is {title.title()}.")
 
 favourite_book("What Light")
 favourite_book("Gods and Warriors")
 
+# T-shirt size and text
 def make_tshirt(text="I love Python", size="large"):
     print(f"\nThe T-shirt size is {size} and it is going to have '{text}' on it.")
 
@@ -18,6 +20,7 @@ make_tshirt("Jer 29:11")
 make_tshirt(size= "small",text="worthy")
 make_tshirt()
 
+# Describe city
 def describe_city(name,country="U.S.A"):
     print(f"\n{name.title()} is in {country.title()}.")
 
