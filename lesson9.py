@@ -64,9 +64,7 @@ class User:
 
     def increment_login_attempts(self, login_times):
         """ Increment login attempts by 1"""
-        if self.login_attempts >= login_times:
-
-            print(f"{self.login_attempts} login times")
+        pass
 
     
     def reset_login_attempts(self):
