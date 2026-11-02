@@ -64,7 +64,7 @@ class User:
 
     def increment_login_attempts(self, login_times):
         """ Increment login attempts by 1"""
-        pass
+        self.login_attempts += 1
 
     
     def reset_login_attempts(self):
