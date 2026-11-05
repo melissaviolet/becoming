@@ -26,6 +26,7 @@ class Restaurant:
     def increment_number_served(self, n_of_people):
         """Increments number of people served"""
         self.number_served += n_of_people
+    
 
 # first restaurant instance
 my_restaurant = Restaurant("Quince", "Italian")
@@ -46,6 +47,22 @@ print(f"The restaurant cuisine is {restaurant2.cuisine_type}")
 restaurant2.describe_restaurant()
 restaurant2.open_restaurant()
 
+# inheritance
+class IceCreamStand(Restaurant):
+
+    def __init__(self, restaurant_name, cuisine_type, *flavours):
+        super().__init__(restaurant_name, cuisine_type)
+        self.flavours = flavours
+
+    def display_flavours(self):
+        print(f"The available flavours are:")
+        print(f"{self.flavours}")
+
+icecreamstand = IceCreamStand("nana's", "icecream", "orange", "oreo", "banana")
+icecreamstand.describe_restaurant()
+icecreamstand.display_flavours()
+
+# class user
 class User:
     def __init__(self, first_name, last_name, age, hobby):
         self.first_name = first_name
@@ -65,7 +82,6 @@ class User:
     def increment_login_attempts(self, login_times):
         """ Increment login attempts by 1"""
         self.login_attempts += 1
-
     
     def reset_login_attempts(self):
         """Reset login attempts to 0"""
@@ -82,4 +98,19 @@ user2 = User("ian", "kirunda", 24, "football")
 user2.describe_user()
 user2.greet_user()
 
+# inheritance
+class Admin(User):
+
+    def __init__(self, first_name, last_name, age, hobby, *privileges):
+        super().__init__(first_name, last_name, age, hobby)
+        self.privileges = privileges
+
+    def show_privileges(self):
+        print(f"This admin can;")
+        print(f"\n{self.privileges}")
+
+admin = Admin("kayla", "mcqueen", 35, "music", "can add posts", "can add members", "can remove members")
+admin.describe_user()
+admin.show_privileges()
+    
         
